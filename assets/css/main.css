@@ -5448,6 +5448,17 @@ input[type="submit"] {
     top: 0;
 }
 
+.banner-button-group button {
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px 45px;
+    background-color: green !important;
+}
+
 .app-download-section {
     position: relative;
 }
