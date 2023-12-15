@@ -9,10 +9,6 @@ const comentarioSchema = mongoose.Schema({
         type: String,
         required: true,
         default: 'Anónimo'
-    },
-    calificacion: {
-        required: true,
-        type: Number
     }
 })
 

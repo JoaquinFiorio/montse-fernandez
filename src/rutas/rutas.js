@@ -17,15 +17,14 @@ router.get("/comentarios", async (req, res) => {
 })
 
 router.post("/", async (req, res) => {
-    const { escritoPor, contenido, calificacion } = req.body;
+    const { escritoPor, contenido } = req.body;
     try {
         const nuevoComentario = await new Comentario({
             escritoPor,
             contenido,
-            calificacion
         });
-        const comentariGuardado = await nuevoComentario.save();
-        return res.status(200).send({ message: 'Comentario Guardado con éxito', comentariGuardado })
+        await nuevoComentario.save();
+        return res.redirect("/")
     } catch (error) {
         return res.status(500).send({ message: 'Algo sucedió en el servidor' })
     }

@@ -11,7 +11,8 @@ dotenv.config();
 app.use(express.static(path.join(__dirname, 'src/public')));
 
 /* RUTAS */
-app.use(express.json())
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/api/montse", vistaRutas);
 
 app.listen(process.env.PORT || 3000, () => {

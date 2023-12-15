@@ -4,7 +4,6 @@ Content-Type: application/json
 
 {
     "contenido": "Este es un test",
-    "calificacion": 5
 }
 
 ###
