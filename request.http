@@ -1,0 +1,11 @@
+###
+POST http://localhost:3000/api/montse
+Content-Type: application/json
+
+{
+    "contenido": "Este es un test",
+    "calificacion": 5
+}
+
+###
+GET http://localhost:3000/api/montse/comentarios
