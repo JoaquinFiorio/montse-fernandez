@@ -4,7 +4,15 @@ const path = require("path");
 const Comentario = require("../modelos/modelo");
 
 router.get("/", (req, res) => {
-    res.render(path.join(__dirname, '../public/index.html'));
+    res.render('index');
+})
+
+router.get("/it", (req, res) => {
+    res.render('italiano');
+})
+
+router.get("/fr", (req, res) => {
+    res.render('frances');
 })
 
 router.get("/comentarios", async (req, res) => {
